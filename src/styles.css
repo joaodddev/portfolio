@@ -1,0 +1,18 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #f0f0ee;
+  background: #0a0a0a;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at top left, #0d9488 0%, #0a0a0a 55%, #ea5c2b 100%);
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
+}
