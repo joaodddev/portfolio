@@ -9,9 +9,6 @@ const FILTERS = [
   { label: 'Java',   value: 'java',   cls: 'f-java' },
   { label: 'Go',     value: 'go',     cls: 'f-go' },
   { label: 'Kotlin', value: 'kotlin', cls: 'f-kotlin' },
-  { label: 'Spring', value: 'spring', cls: 'f-spring' },
-  { label: 'Kafka',  value: 'kafka',  cls: 'f-kafka' },
-  { label: 'Docker', value: 'docker', cls: 'f-docker' },
 ] as const
 
 type FilterValue = (typeof FILTERS)[number]['value']
