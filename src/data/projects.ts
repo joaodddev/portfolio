@@ -98,7 +98,7 @@ const projects: Project[] = [
     lang: 'kotlin',
     tags: ['Kotlin', 'Spring Boot', 'Clean Architecture', 'Redis', 'Flyway'],
     desc: 'API de taxas de câmbio com arquitetura limpa, integração com Open Exchange Rates, cache Redis e migrations Flyway.',
-    url: 'https://github.com/nevvesdev/fx-rate-api',
+    url: 'https://github.com/nevvesdev/fx-currency-exchange',
     featured: false,
   },
   {
@@ -172,6 +172,25 @@ const projects: Project[] = [
     desc: 'Serviço de transferência interbancária com Kotlin + Spring Boot + gRPC.',
     url: 'https://github.com/nevvesdev/interbank-transfer-service',
     featured: false,
+  },
+  {
+    id: '19',
+    name: 'Distributed Lock Manager',
+    lang: 'go',
+    tags: ['Go', 'Loa', 'Redis', 'Heartbeat', 'Fencing Token'],
+    desc: 'Gerenciador de locks distribuídos implementado em Go com Redis, scripts Lua atômicos, fencing tokens e renovação automática via heartbeat.',
+    url: 'https://github.com/nevvesdev/distributed-lock-manager',
+    featured: true,
+
+  },
+  {
+    id: '20',
+    name: 'Realtime Payment',
+    lang: 'go',
+    tags: ['Go', 'Docker', 'Kafka', 'PostgreSQL', 'Redis'],
+    desc: 'Processador de pagamentos em tempo real - estudando sobre GraphQL.',
+    url: 'https://github.com/nevvesdev/realtime-payment',
+    featured: true,
   }
   // novos projetos acima desta linha
 ]
