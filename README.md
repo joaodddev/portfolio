@@ -1,8 +1,8 @@
-# Portfolio — João Victor Macedo Neves
+# Portfólio — João Victor Macedo Neves
 
-Personal portfolio built with **Next.js 15**, **TypeScript**, and **CSS custom properties** — no UI libraries, no component frameworks, no shortcuts.
+Portfólio pessoal construído com **Next.js 15**, **TypeScript** e **CSS custom properties** — sem bibliotecas de UI, sem frameworks de componentes, sem atalhos.
 
-**Live:** [portfolio-joaodddev.vercel.app](https://portfolio-joaodddev.vercel.app)
+**Live:** [portfolio-nevvesdev.vercel.app](https://portfolio-nevvesdev.vercel.app/)
 
 ---
 
@@ -10,29 +10,29 @@ Personal portfolio built with **Next.js 15**, **TypeScript**, and **CSS custom p
 
 - **Next.js 15** — App Router, Server Components
 - **TypeScript** — strict mode
-- **CSS** — vanilla, custom properties, no Tailwind
-- **Vercel** — CI/CD on every push to `main`
+- **CSS** — vanilla, custom properties, sem Tailwind
+- **Vercel** — CI/CD a cada push para `main`
 
-## Architecture decisions
+## Decisões de arquitetura
 
-**Server Components by default.** `page.tsx` reads `projects.ts` at build time and passes data down as props — no client-side fetching, no loading states, no useEffect.
+**Server Components por padrão.** `page.tsx` lê `projects.ts` em build time e passa dados como props — sem fetching no cliente, sem loading states, sem useEffect.
 
-**Client Component only where needed.** `ProjectsSection.tsx` is the only `'use client'` component, isolated to where interactivity (filter state) actually lives.
+**Client Component apenas onde necessário.** `ProjectsSection.tsx` é o único componente com `'use client'`, isolado para onde a interatividade (estado de filtro) realmente existe.
 
-**Single source of truth for content.** All projects live in `src/data/projects.ts`. Adding a project means editing one file and pushing — Vercel rebuilds in ~30s.
+**Única fonte de verdade para conteúdo.** Todos os projetos vivem em `src/data/projects.ts`. Adicionar um projeto significa editar um arquivo e fazer push — Vercel rebuilda em ~30s.
 
-## Project structure
+## Estrutura do projeto
 
 ```
 src/
 ├── app/
-│   ├── layout.tsx          # root layout, metadata, Inter font
-│   ├── page.tsx            # home page (Server Component)
-│   └── globals.css         # all styles — one file, no modules
+│   ├── layout.tsx          # root layout, metadata, fonte Inter
+│   ├── page.tsx            # página home (Server Component)
+│   └── globals.css         # todos os estilos — um arquivo, sem módulos
 ├── components/
-│   ├── Hero.tsx            # name, stack pills, social icons
-│   ├── ProjectsSection.tsx # filter state (Client Component)
-│   └── ProjectCard.tsx     # individual project card
+│   ├── Hero.tsx            # nome, tech pills, ícones sociais
+│   ├── ProjectsSection.tsx # estado de filtro (Client Component)
+│   └── ProjectCard.tsx     # card individual de projeto
 └── data/
-    └── projects.ts         # ← only file you edit to add projects
+    └── projects.ts         # ← único arquivo que você edita para adicionar projetos
 ```
