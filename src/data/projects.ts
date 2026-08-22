@@ -191,7 +191,25 @@ const projects: Project[] = [
     desc: 'Processador de pagamentos em tempo real - estudando sobre GraphQL.',
     url: 'https://github.com/nevvesdev/realtime-payment',
     featured: true,
-  }
+  },
+  {
+    id: '21',
+    name: 'Distributed Cache',
+    lang: 'java',
+    tags: ['Java 21', 'Docker', 'Flyway', 'PostgreSQL', 'Redis'],
+    desc: 'Serviço de consulta de saldo e limite de contas, com Redis como cache distribuído usando a estratégia Cache-Aside.',
+    url: 'https://github.com/nevvesdev/distributed-cache',
+    featured: true,
+  },
+  {
+    id: '22',
+    name: 'Distributed Transaction Coordinator',
+    lang: 'java',
+    tags: ['Java 21', 'Docker', 'Flyway', 'MySQL', 'SAGA Pattern'],
+    desc: 'Um orquestrador de transações distribuídas com suporte a 2-Phase Commit e Saga Pattern.',
+    url: 'https://github.com/nevvesdev/distributed-transaction-coordinator',
+    featured: true,
+  },
   // novos projetos acima desta linha
 ]
 
